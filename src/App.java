@@ -14,7 +14,7 @@ public class App {
         u.setEmail(JOptionPane.showInputDialog("Digite seu email:"));
         JLabel labelSenha = new JLabel("Digite a senha:");
         JPasswordField jpfSenha = new JPasswordField();
-        JOptionPane.showConfirmDialog(null, new Object[]{labelSenha, jpfSenha}, null, JOptionPane.OK_CANCEL_OPTION);
+        JOptionPane.showConfirmDialog(null, new Object[]{labelSenha, jpfSenha}, "Input", JOptionPane.OK_CANCEL_OPTION);
         String senha = new String(jpfSenha.getPassword());
         // System.out.println(jpfSenha.getPassword());
         u.setSenha(senha);
