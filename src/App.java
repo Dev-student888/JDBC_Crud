@@ -1,3 +1,10 @@
+/* URIs para consulta: 
+ * COMO CRIAR UMA CONEXÃO JDBC COM BANCO DE DADOS MYSQL EM JAVA: https://youtu.be/70s7JsiaBRc?si=WnYXi3tNwndC9M02
+ * Java - Como criar campo de senha dentro de um JOptionPane: https://youtu.be/46QVIwa4tiM?si=slOcsWRdSQiGNoBl
+ * jpasswordfield show password: https://www.google.com/search?q=jpasswordfield+show+password&hl=pt-BR&pli=1
+ * Aula 1497 java - JPasswordField e setEchoChar Swing: https://youtu.be/AD9Y9Yji8Gw?si=C295lAruvQYmOxVF 
+ */
+
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
