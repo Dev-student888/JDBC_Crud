@@ -22,12 +22,23 @@ public class UsuarioDAO {
             ps.setString(4, usuario.getEmail());
             
             ps.execute();
-            ps.close();
 
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (ps != null) {
+                    ps.close();
+                }
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
         }
         
     }
+    // Criar método para Renomear/Atualizar um Usuário
+    // Criar método para Apagar/Deletar um Usuário
 
 }
