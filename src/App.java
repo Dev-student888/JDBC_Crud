@@ -21,6 +21,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         
         Usuario u = new Usuario();
+        // Mudar o ícone nos 2 (dois) últimos métodos JOptionPane.showConfirmDialog 
+        // Aplicar Regex para validar nome, login, email e senha
         
         u.setNome(JOptionPane.showInputDialog("Digite seu nome completo:"));
         u.setLogin(JOptionPane.showInputDialog("Digite seu nome de usuário:"));
@@ -50,10 +52,12 @@ public class App {
             String senha = new String(jpfSenha.getPassword());
             // System.out.println(jpfSenha.getPassword());
             u.setSenha(senha);
-            JOptionPane.showMessageDialog(null, "Senha cadastrada com sucesso!", "Senha Cadastrada", JOptionPane.INFORMATION_MESSAGE);
+            // Mudar o ícone neste JOptionPane.showConfirmDialog abaixo
+            JOptionPane.showConfirmDialog(null, "Senha cadastrada com sucesso!", "Senha Cadastrada", JOptionPane.OK_CANCEL_OPTION);
 
             new UsuarioDAO().cadastrarUsuario(u);
-            JOptionPane.showMessageDialog(null, "Usuário cadastrado com sucesso!", "Cadastro Bem Sucedido", JOptionPane.INFORMATION_MESSAGE);
+            // Mudar o ícone neste JOptionPane.showConfirmDialog abaixo também
+            JOptionPane.showConfirmDialog(null, "Usuário cadastrado com sucesso!", "Cadastro Bem Sucedido", JOptionPane.OK_CANCEL_OPTION);
         }
         
     }
